@@ -144,6 +144,9 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Load external auto-complete
+source $HOME/.config/zsh/auto-complete/chezmoi.zsh
+
 #Chezmoi aliases
 alias cze-zshrc="chezmoi edit ~/.zshrc"
 
