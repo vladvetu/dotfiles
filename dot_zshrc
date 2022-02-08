@@ -140,6 +140,8 @@ zinit load Tarrasch/zsh-bd
 zinit load skywind3000/z.lua
 eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 ##
+## Command completion
+zinit load hlissner/zsh-autopair
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
