@@ -104,8 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -148,7 +146,7 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 source $HOME/.config/zsh/auto-complete/chezmoi.zsh
 
 #Chezmoi aliases
-alias cze-zshrc="chezmoi edit ~/.zshrc"
+alias czm-zshrc="chezmoi edit ~/.zshrc"
 
 #ALIAS
 alias dc='bd'
