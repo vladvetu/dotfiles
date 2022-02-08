@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+{{- if (eq .chezmoi.hostname "tpx1.vvdac.com") }}
+        email = vetu.vlad@gmail.com
+{{- else }}
+        email = vvetu@cbn.ro
+{{- end }}
+	name = Vlad Vetu
