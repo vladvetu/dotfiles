@@ -151,7 +151,7 @@ zinit load hlissner/zsh-autopair
 source $HOME/.config/zsh/auto-complete/chezmoi.zsh
 
 #Chezmoi aliases
-alias czm-zshrc="chezmoi edit ~/.zshrc"
+alias cze-zshrc="chezmoi edit ~/.zshrc"
 
 #ALIAS
 alias dc='bd'
