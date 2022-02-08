@@ -151,7 +151,7 @@ zinit load hlissner/zsh-autopair
 source $HOME/.config/zsh/auto-complete/chezmoi.zsh
 
 # Load external scripts
-source $HOME/.config/zsh/plugins/chezmoi.zsh
+source $HOME/.config/zsh/plugins/conda.zsh
 
 #Chezmoi aliases
 alias czu="chezmoi update"
