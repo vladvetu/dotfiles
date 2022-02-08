@@ -142,7 +142,10 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 ##
 ## Command completion
 zinit load hlissner/zsh-autopair
+
+## Conda helpers
 zinit load esc/conda-zsh-completion
+zinit load se-jaeger/zsh-activate-py-environment
 ##
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
