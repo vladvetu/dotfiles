@@ -142,7 +142,6 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 ##
 ## Command completion
 zinit load hlissner/zsh-autopair
-zinit load marlonrichert/zsh-autocomplete 
 ##
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
