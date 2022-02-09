@@ -58,7 +58,7 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 zinit load hlissner/zsh-autopair
 zinit light le0me55i/zsh-systemd
 zinit light xPMo/zsh-toggle-command-prefix
-zinit load chitoku-k/fzf-zsh-completions
+#zinit load chitoku-k/fzf-zsh-completions
 zinit load zdharma-continuum/fast-syntax-highlighting
 zinit load zsh-users/zsh-autosuggestions
 
