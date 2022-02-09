@@ -142,6 +142,7 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 ##
 ## Command completion
 zinit load hlissner/zsh-autopair
+zinit light le0me55i/zsh-systemd
 
 ## Conda helpers
 zinit load esc/conda-zsh-completion
