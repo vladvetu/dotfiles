@@ -76,10 +76,14 @@ zinit load se-jaeger/zsh-activate-py-environment
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Load external auto-complete
-source $HOME/.config/zsh/auto-complete/chezmoi.zsh
+for file in $HOME/.config/zsh/auto-complete/*.zsh; do
+    source "$file"
+done
 
 # Load external scripts
-source $HOME/.config/zsh/plugins/conda.zsh
+for file in $HOME/.config/zsh/plugins/*.zsh; do
+    source "$file"
+done
 
 #Chezmoi aliases
 alias czu="chezmoi update"
