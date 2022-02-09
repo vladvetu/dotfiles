@@ -58,13 +58,12 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 zinit load hlissner/zsh-autopair
 zinit light le0me55i/zsh-systemd
 zinit light xPMo/zsh-toggle-command-prefix
-
+zinit load chitoku-k/fzf-zsh-completions
 zinit wait lucid for \
  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
     zdharma-continuum/fast-syntax-highlighting \
  blockf \
     #zsh-users/zsh-completions \
-    chitoku-k/fzf-zsh-completions \
  atload"!_zsh_autosuggest_start" \
     zsh-users/zsh-autosuggestions
 
