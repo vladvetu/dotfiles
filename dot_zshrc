@@ -59,13 +59,16 @@ zinit load hlissner/zsh-autopair
 zinit light le0me55i/zsh-systemd
 zinit light xPMo/zsh-toggle-command-prefix
 zinit load chitoku-k/fzf-zsh-completions
-zinit wait lucid for \
- atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-    zdharma-continuum/fast-syntax-highlighting \
- blockf \
-    #zsh-users/zsh-completions \
- atload"!_zsh_autosuggest_start" \
-    zsh-users/zsh-autosuggestions
+zinit load zdharma-continuum/fast-syntax-highlighting
+zinit load zsh-users/zsh-autosuggestions
+
+#zinit wait lucid for \
+# atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
+#    zdharma-continuum/fast-syntax-highlighting \
+# blockf \
+#    zsh-users/zsh-completions \
+# atload"!_zsh_autosuggest_start" \
+#    zsh-users/zsh-autosuggestions
 
 ## Conda helpers
 zinit load esc/conda-zsh-completion
