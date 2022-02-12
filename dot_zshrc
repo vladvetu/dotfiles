@@ -63,6 +63,11 @@ zinit light trapd00r/LS_COLORS
 zinit light larkery/zsh-histdb
 zinit light m42e/zsh-histdb-fzf
 
+## Folder jumping
+zinit load Tarrasch/zsh-bd
+zinit load skywind3000/z.lua
+eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
+
 # Plugins
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
