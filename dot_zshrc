@@ -14,9 +14,25 @@ autoload -Uz _zinit
 # first include some defaults
 source $HOME/.config/zsh/defaults.zsh
 
-for file in "$HOME/.config/zsh/config.d/"*.zsh; do
-  source $file
-done
+typeset -ga sources
+sources+="$ZSH_CONFIG/environment.zsh"
+sources+="$ZSH_CONFIG/function.d"
+sources+="$ZSH_CONFIG/alias.d"
+sources+="$ZSH_CONFIG/init.d"
+
+# try to include all sources
+foreach item (`echo $sources`)
+    if [[ -d "$item" ]]; then
+      for file in "$item/*.zsh"; do
+        source $file
+      done
+    elif [[ -a "$item" ]]; then
+    # sourceIncludeTimeStart=$(gdate +%s%N)
+      source $item
+    # sourceIncludeDuration=$((($(gdate +%s%N) - $sourceIncludeTimeStart)/1000000))
+    # echo $sourceIncludeDuration ms runtime for $file
+    fi
+end
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
