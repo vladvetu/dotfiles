@@ -65,7 +65,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light xPMo/zsh-toggle-command-prefix
 zinit light Aloxaf/fzf-tab
-
+zinit light supercrabtree/k
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
