@@ -24,7 +24,7 @@ sources+="$ZSH_CONFIG/completion.d"
 # try to include all sources
 foreach item (`echo $sources`)
     if [[ -d "$item" ]]; then
-      for file in "$item/*.zsh"; do
+      for file in "$item/"*.zsh; do
         source $file
       done
     elif [[ -a "$item" ]]; then
