@@ -43,6 +43,10 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+
+zinit light le0me55i/zsh-systemd
+zinit load chitoku-k/fzf-zsh-completions
+
 #Load completions above this line
 autoload compinit
 compinit
@@ -71,6 +75,7 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 # Plugins
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
+zinit light xPMo/zsh-toggle-command-prefix
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
