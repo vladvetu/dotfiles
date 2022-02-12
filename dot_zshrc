@@ -19,6 +19,7 @@ sources+="$ZSH_CONFIG/environment.zsh"
 sources+="$ZSH_CONFIG/function.d"
 sources+="$ZSH_CONFIG/alias.d"
 sources+="$ZSH_CONFIG/init.d"
+sources+="$ZSH_CONFIG/completion.d"
 
 # try to include all sources
 foreach item (`echo $sources`)
