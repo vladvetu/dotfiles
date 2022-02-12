@@ -1,1 +1,1 @@
-alias='ls --color=auto'
+alias ls='ls --color=auto'
