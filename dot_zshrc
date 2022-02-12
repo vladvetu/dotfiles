@@ -12,7 +12,7 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # first include some defaults
-source $HOME/.config/zsh/defaults.zsh
+source "$HOME/.config/zsh/defaults.zsh"
 
 typeset -ga sources
 sources+="$ZSH_CONFIG/environment.zsh"
