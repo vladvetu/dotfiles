@@ -46,7 +46,7 @@ autoload -Uz _zinit
 
 zinit light le0me55i/zsh-systemd
 #zinit load chitoku-k/fzf-zsh-completions
-#zinit load Aloxaf/fzf-tab
+zinit light Aloxaf/fzf-tab
 
 #Load completions above this line
 autoload compinit
