@@ -11,6 +11,20 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
+typeset -ga sources
+
+sources+="$ZSH_CONFIG/environment.zsh"
+sources+="$ZSH_CONFIG/options.zsh"
+
+# try to include all sources
+foreach file (`echo $sources`)
+    if [[ -a $file ]]; then
+        source $file
+    fi
+end
+
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
