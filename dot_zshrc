@@ -46,7 +46,6 @@ autoload -Uz _zinit
 
 zinit light le0me55i/zsh-systemd
 #zinit load chitoku-k/fzf-zsh-completions
-zinit light Aloxaf/fzf-tab
 
 #Load completions above this line
 autoload compinit
@@ -77,7 +76,7 @@ eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light xPMo/zsh-toggle-command-prefix
-
+zinit light Aloxaf/fzf-tab
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
