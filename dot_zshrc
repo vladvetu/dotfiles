@@ -14,18 +14,9 @@ autoload -Uz _zinit
 # first include some defaults
 source $HOME/.config/zsh/defaults.zsh
 
-typeset -ga sources
-sources+="$ZSH_CONFIG/"
-sources+="$ZSH_CONFIG/options.zsh"
-
-# try to include all sources
-foreach file (`echo $sources`)
-    if [[ -a $file ]]; then
-        source $file
-    fi
-end
-
-
+for file in "$HOME/.config/zsh/config.d/"*.zsh; do
+  source $file
+done
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
