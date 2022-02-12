@@ -1,4 +1,4 @@
-#alias cz ='chezmoi'
+alias cz ='chezmoi'
 
 alias cz-add='chezmoi add'
 alias cz-edit='chezmoi edit'
