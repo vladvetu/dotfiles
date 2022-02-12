@@ -57,6 +57,12 @@ zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
 zinit light trapd00r/LS_COLORS
 
 #Load plugins below this line
+# History
+
+## Command history
+zinit light larkery/zsh-histdb
+zinit light m42e/zsh-histdb-fzf
+
 # Plugins
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
