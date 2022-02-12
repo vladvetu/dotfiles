@@ -37,7 +37,7 @@ for item in $sources[@]; do
   # sourceIncludeDuration=$((($(gdate +%s%N) - $sourceIncludeTimeStart)/1000000))
   # echo $sourceIncludeDuration ms runtime for $file
   fi
-end
+done
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
