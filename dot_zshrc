@@ -39,6 +39,10 @@ autoload -Uz _zinit
 #Load completions above this line
 autoload compinit
 compinit
+
+#Theme
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 #Load plugins below this line
 # Plugins
 zinit light zdharma-continuum/fast-syntax-highlighting
