@@ -11,9 +11,11 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-typeset -ga sources
+# first include some defaults
+source $HOME/.config/zsh/defaults.zsh
 
-sources+="$ZSH_CONFIG/environment.zsh"
+typeset -ga sources
+sources+="$ZSH_CONFIG/"
 sources+="$ZSH_CONFIG/options.zsh"
 
 # try to include all sources
