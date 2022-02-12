@@ -26,7 +26,7 @@ sources+="$ZSH_CONFIG/completion.d"
 for item in $sources[@]; do
   echo "directory: $item"
   if [[ -d "$item" ]]; then
-    for file in "$item/*.zsh"; do
+    for file in $item/*.zsh; do
       echo "file: $file"
       source $file
     done
