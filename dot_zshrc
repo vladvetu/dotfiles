@@ -8,27 +8,27 @@ fi
 # first include some defaults
 source "$HOME/.config/zsh/defaults.zsh"
 
-typeset -ga sources
-sources+="$ZSH_CONFIG/environment.zsh"
-sources+="$ZSH_CONFIG/function.d"
-sources+="$ZSH_CONFIG/alias.d"
-sources+="$ZSH_CONFIG/init.d"
-sources+="$ZSH_CONFIG/completion.d"
+##typeset -ga sources
+##sources+="$ZSH_CONFIG/environment.zsh"
+##sources+="$ZSH_CONFIG/function.d"
+##sources+="$ZSH_CONFIG/alias.d"
+##sources+="$ZSH_CONFIG/init.d"
+##sources+="$ZSH_CONFIG/completion.d"
 
 # try to include all sources
 # FIXME: Doesn't support empty folders
-for item in $sources[@]; do
-  if [[ -d "$item" ]]; then
-    for file in $item/*.zsh; do
-      source $file
-    done
-  elif [[ -a "$item" ]]; then
-  # sourceIncludeTimeStart=$(gdate +%s%N)
-    source $item
-  # sourceIncludeDuration=$((($(gdate +%s%N) - $sourceIncludeTimeStart)/1000000))
-  # echo $sourceIncludeDuration ms runtime for $file
-  fi
-done
+##for item in $sources[@]; do
+##  if [[ -d "$item" ]]; then
+##    for file in $item/*.zsh; do
+##      source $file
+##    done
+##  elif [[ -a "$item" ]]; then
+##  # sourceIncludeTimeStart=$(gdate +%s%N)
+##    source $item
+##  # sourceIncludeDuration=$((($(gdate +%s%N) - $sourceIncludeTimeStart)/1000000))
+##  # echo $sourceIncludeDuration ms runtime for $file
+##  fi
+##done
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
