@@ -73,10 +73,10 @@ zinit load skywind3000/z.lua
 eval "$(lua ~/.local/share/zinit/plugins/skywind3000---z.lua/z.lua --init zsh)"
 
 # Plugins
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zsh-users/zsh-autosuggestions
-zinit light xPMo/zsh-toggle-command-prefix
-zinit light Aloxaf/fzf-tab
+#zinit light zdharma-continuum/fast-syntax-highlighting
+#zinit light zsh-users/zsh-autosuggestions
+#zinit light xPMo/zsh-toggle-command-prefix
+#zinit light Aloxaf/fzf-tab
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -91,3 +91,10 @@ export EDITOR=vim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Plugins
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light xPMo/zsh-toggle-command-prefix
+zinit light Aloxaf/fzf-tab
+
