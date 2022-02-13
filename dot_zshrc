@@ -67,6 +67,9 @@ zinit light xPMo/zsh-toggle-command-prefix
 zinit light Aloxaf/fzf-tab
 zinit light supercrabtree/k
 
+# Snippets
+zinit snippet OMZP::dirhistory
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
