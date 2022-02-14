@@ -42,6 +42,7 @@ autoload -Uz _zinit
 
 
 zinit light le0me55i/zsh-systemd
+zinit light esc/conda-zsh-completion
 
 #Load completions above this line
 autoload compinit
