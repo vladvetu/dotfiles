@@ -25,3 +25,6 @@ fi
 unset rc
 
 # Start using chezmoi
+
+# Created by `pipx` on 2024-04-28 10:14:39
+export PATH="$PATH:/home/vvetu/.local/bin"
