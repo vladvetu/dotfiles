@@ -1,4 +1,5 @@
-# Exports                                 
+# Exports
+export EDITOR=vim
 export PATH="$PATH:/home/vvetu/.local/bin"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -38,5 +39,25 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Source our custom aliases
-source ~/.zsh_aliases
+# Source our things
+source "$HOME/.config/zsh/defaults.zsh"
+
+typeset -ga sources
+sources+="$ZSH_CONFIG/environment.zsh"
+sources+="$ZSH_CONFIG/function.d"
+sources+="$ZSH_CONFIG/alias.d"
+sources+="$ZSH_CONFIG/init.d"
+sources+="$ZSH_CONFIG/completion.d"
+
+### Try to include all sources
+for item in $sources[@]; do
+  if [ -d "$item" ] && [ -n "$(ls -A $item)" ]; then
+    if [[ -d "$item" ]]; then
+      for file in $item/*.zsh; do
+        source $file
+      done
+    elif [[ -a "$item" ]]; then
+      source $item
+    fi
+  fi
+done
