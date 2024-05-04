@@ -14,5 +14,9 @@ unset __conda_setup
 
 if [ -f "/home/vvetu/conda/etc/profile.d/mamba.sh" ]; then
     . "/home/vvetu/conda/etc/profile.d/mamba.sh"
-fi
+fi 
 # <<< conda initialize <<<
+# Check if conda os environment exist and activate it
+if [ -d $HOME/conda/envs/os ]; then
+  conda activate os
+fi
