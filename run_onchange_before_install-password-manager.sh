@@ -7,7 +7,6 @@ if [ "$EUID" -eq 0 ]; then
   echo "BOOTSTRAP[ERROR]: Please don't run as root"
   exit
 fi
-
 # This script will install the Bitwarden CLI
 
 install_bitwarden() {
@@ -18,10 +17,12 @@ install_bitwarden() {
   rm /tmp/bw-linux-$version.zip
 }
 
+echo "BOOTSTRAP[BITWARDEN][INFO]: Checking if Bitwarden CLI is installed"
 if [ -f $HOME/.local/bin/bw ]; then
+  bw_version_this=$(bw --version)
   echo "BOOTSTRAP[BITWARDEN][INFO]: Bitwarden CLI is already installed"
   echo "BOOTSTRAP[BITWARDEN][INFO]: Checking if Bitwarden CLI needs to be updated"
-  if [ "$(bw --version)" != "$BW_VERSION" ]; then
+  if [ "$bw_version_this" != "$BW_VERSION" ]; then
     echo "BOOTSTRAP[BITWARDEN][INFO]: Updating Bitwarden CLI"
     install_bitwarden "$BW_VERSION"
   else
