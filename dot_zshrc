@@ -71,4 +71,4 @@ for item in $sources[@]; do
     fi
   fi
 done
-
+zinit ice depth=1; zinit load atuinsh/atuin
